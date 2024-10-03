@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState, useCallback, useImperativeHandle, f
 import { useThree } from '@react-three/fiber';
 import gsap from 'gsap';
 import * as THREE from 'three';
-import { SCREEN_POSITIONS } from './constants';
+import { SCREEN_POSITIONS } from './constants/index.js';
 
 const Camera = forwardRef(({ onMoveComplete, isOsOpen }, ref) => {
     const camera = useRef();
